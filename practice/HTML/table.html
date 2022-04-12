@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>UI Bootcamp Day 1 - Table</title>
+</head>
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        /* border-collapse: collapse; */
+        padding: 5px;
+    }
+
+    th,
+    td:first-child,
+    td:last-child {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <!-- Complex Table -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Product</th>
+            </tr>
+            <tr>
+                <th>No</th>
+                <th>P.Name</th>
+                <th>P.Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Pen</td>
+                <td rowspan="3">10</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Book</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Paper</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr />
+    <!-- Simple Table -->
+    <table>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Full Name</th>
+                <th>Position</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Bill Gates</td>
+                <td>Founder Microsoft</td>
+                <td>$1000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Steve jobs</td>
+                <td>Founder Apple</td>
+                <td>$1200</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Larry Page</td>
+                <td>Founder Google</td>
+                <td>$1100</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Mark Zuckeberg</td>
+                <td>Founder Facebook</td>
+                <td>$1300</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

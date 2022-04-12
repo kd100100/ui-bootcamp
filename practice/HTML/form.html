@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>UI Bootcamp Day 1 - Form</title>
+</head>
+
+<body>
+    <header>
+        <p>User info form:</p>
+    </header>
+    <form autocomplete>
+        <fieldset>
+            <legend>Requirement</legend>
+            <label for="name">Name:</label>
+            <input type="text" name="name" required placeholder="Enter your name" />
+            <br />
+            <label for="password">Password:</label>
+            <input type="password" name="password" placeholder="Enter your password" />
+            <br />
+            <br />
+            <label>Party: </label>
+            <br />
+            <input type="radio" id="democrat" name="party" />
+            <label for="democrat">Democrat</label>
+            <br />
+            <input type="radio" id="democrat" name="party" />
+            <label for="democrat">Republican</label>
+            <br />
+            <br />
+            <label for="state">State: </label>
+            <select id="state">
+                <option value="Oregon">Oregon</option>
+                <option value="Texas">Texas</option>
+                <option value="San Fransisco">San Fransisco</option>
+            </select>
+            <br />
+            <br />
+            <label for="comments">Comments</label>
+            <br />
+            <textarea id="comments" placeholder="Type in comments"></textarea>
+            <br />
+            <br />
+            <label for="info-check">Send me more information: </label>
+            <input type="checkbox" id="info-check" />
+        </fieldset>
+        <br />
+        <fieldset>
+            <legend>Extras</legend>
+            <label for="email">Email Address: </label>
+            <input type="email" id="email" readonly />
+            <br />
+            <br />
+            <label for="url">Enter your portfolio url: </label>
+            <input type="url" id="url" disabled />
+            <br />
+            <br />
+            <label for="color">Favourite Colour: </label>
+            <input type="color" id="color" />
+            <br />
+            <br />
+            <label for="number">Favourite Number: </label>
+            <input type="number" id="number" min="1" max="10" />
+            <br />
+            <br />
+            <label for="range">Happiness Percentage: </label>
+            <input type="range" id="range" value="100" />
+            <br />
+            <br />
+            <label for="dob">Date of Birth: </label>
+            <input type="date" id="dob" />
+            <br />
+            <br />
+            <label for="current">Current Date and Time: </label>
+            <input type="datetime-local" id="current" />
+            <br />
+            <br />
+            <label for="wake-up">Wake up time: </label>
+            <input type="time" id="wake-up" />
+            <br />
+            <br />
+            <label for="resume">Resume: </label>
+            <input type="file" id="resume" />
+            <br />
+            <br />
+            <label>Your browser</label>
+            <input list="data-list" />
+            <datalist id="data-list">
+                <option>chrome</option>
+                <option>mozilla</option>
+                <option>safari</option>
+            </datalist>
+        </fieldset>
+        <br />
+        <br />
+        <button type="reset">Clear Form</button>
+        <button type="submit">Send Info</button>
+    </form>
+</body>
+
+</html>
