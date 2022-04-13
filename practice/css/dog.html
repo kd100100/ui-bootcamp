@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog</title>
+    <link rel="stylesheet" href="dog.css">
+</head>
+
+<body>
+    <h1>Dog D. Dog</h1>
+
+    <figure>
+        <img src="dog.png" alt="Dog's photo" />
+    </figure>
+    <section>
+        <h2 class="section-title">About</h2>
+        <p class="section-content">Woof woof!</p>
+        <p class="section-content">I love <strong class="light-blue">User Interface Design.</strong></p>
+    </section>
+    <section>
+        <h2 class="section-title">Courses</h2>
+        <p class="section-content">Here are some courses I've taken:</p>
+        <table>
+            <tr>
+                <th>Course Number</th>
+                <th>Course Title</th>
+                <th>Semester Taken</th>
+            </tr>
+            <tr>
+                <th colspan="3">For credit</th>
+            </tr>
+            <tr class="grey-bg">
+                <td class="dark-blue"><strong>6.813</strong></td>
+                <td class="light-blue">User Interface Design</td>
+                <td class="light-blue">Spring 2014</td>
+            </tr>
+            <tr>
+                <td class="dark-blue"><strong>6.034</strong></td>
+                <td>Artificial Intelligence</td>
+                <td>Fall 2013</td>
+            </tr>
+            <tr class="grey-bg">
+                <td class="dark-blue"><strong>6.006</strong></td>
+                <td>Introduction to Algorithms</td>
+                <td>Fall 2013</td>
+            </tr>
+            <tr>
+                <th colspan="3">Listener</th>
+            </tr>
+            <tr class="grey-bg">
+                <td class="light-blue"><strong>6.867</strong></td>
+                <td>Machine Learning</td>
+                <td>Fall 2013</td>
+            </tr>
+            <tr>
+                <td class="light-blue"><strong>6.830</strong></td>
+                <td>Database Systems</td>
+                <td>Fall 2012</td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <h2 class="section-title">Interests</h2>
+        <p class="section-content">I am interested <span id="impact-font">HCI</span>, <span id="comic-sans-font">memes,
+                and youtube videos.</span></p>
+    </section>
+    <section>
+        <h2 class="section-title">Submit Pet Information</h2>
+        <p class="section-content">Would love to know what kinds of pets you 'own' (you'll never own me). Submit below!
+        </p>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name">
+            <br />
+            <label for="phylum">Phylum</label>
+            <input type="text" id="phylum">
+            <br />
+            <label for="gender">Gender</label>
+            <input type="gender" id="gender" />
+            <br />
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+
+</html>

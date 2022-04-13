@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 200vh;
+        }
+        .box {
+            width: 150px;
+            height: 100px;
+            background-color: red;
+            margin: 20px;
+        }
+        .small-box {
+            width: 120px;
+            height: 20px;
+            background-color: rgb(47, 255, 0);
+        }
+        .absolute {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        .relative {
+            position: relative;
+            top: 25%;
+            left: 50%;
+        }
+        .fixed {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+        }
+        .sticky {
+            position: sticky;
+            top: 0;
+        }
+        .zindex {
+            position: absolute;
+            background-color: blue;
+            top: -5px;
+            left: -5px;
+            z-index: 1;
+            opacity: 0.4;
+            color:whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <section class="box ">static
+        <section class="small-box absolute">static-absolute</section>
+    </section>
+    <section class="box relative">relative
+        <section class="small-box absolute">relative-absolute</section>
+    </section>
+    <section class="box absolute">absolute</section>
+    <section class="box fixed">fixed</section>
+    <section class="box sticky">sticky</section>
+    <section class="box zindex">zindex</section>
+</body>
+</html>

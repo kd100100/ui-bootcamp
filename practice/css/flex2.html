@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            width: 100%;
+            display: flex;
+            background-color: lightgray;
+        }
+        .flex-grow {
+            flex-grow: 1;
+        }
+        .red-box {
+            background-color: #FF6B71;
+            height: 250px;
+            width: 30%;
+        }
+        .green-box {
+            background-color: #AFFF5D;
+            height: 120px;
+        }
+        .pink-box {
+            background-color: #FF92FC;
+            height: 110px;
+            width: 50%;
+        }
+        .blue-box {
+            background-color: #9AA2FF;
+            height: 50px;
+        }
+        .red-box, .green-box, .pink-box, .blue-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            color: white;
+            font-size: xx-large;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <!-- left -->
+        <div class="red-box">1</div>
+        <!-- right -->
+        <div class="flex-grow">
+            <!-- right-up -->
+            <div class="green-box">2</div>
+            <!-- right-bottom -->
+            <div class="flex-container">
+                <!-- right-bottom-left -->
+                <div class="pink-box">3</div>
+                <!-- right-bottom-right -->
+                <div class="flex-grow">
+                    <!-- right-bottom-right-up -->
+                    <div class="blue-box">4a</div>
+                    <!-- right-bottom-right-down -->
+                    <div class="blue-box">4b</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

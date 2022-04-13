@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>UI Bootcamp Day 1 - Semantics</title>
+    <style>
+        body {
+            background-color: #222831;
+            color: #fff;
+        }
+        main {
+            display: flex;
+        }
+        #outer-list {
+            padding-left: 5px;
+        }
+        #inner-list {
+            padding-left: 10px;
+        }
+        .links {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Blogging Site</h2>
+    </header>
+    <main>
+        <aside>
+            <nav>
+                <ul type="none" id="outer-list">
+                    <li style="color: rgb(255, 132, 0)">
+                        <h2>Categories</h2>
+                        <ul type="none" id="inner-list">
+                            <li>
+                                <a href="https://www.amazon.in" target="blank" class="links">UI/UX Designing</a>
+                            </li>
+                            <li>
+                                <a href="" class="links">Web Development</a>
+                            </li>
+                            <li>
+                                <a href="" class="links">App Development</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <section>
+            <article>
+                <h1>Blog 1</h1>
+                <firgure>
+                    <img
+                        src="https://media.geeksforgeeks.org/wp-content/uploads/20191205185435/Untitled-drawing-61.png" />
+                    <figcaption>Fig 1. HTML</figcaption>
+                </firgure>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
+                    impedit in, officiis expedita porro neque magnam dolore minima
+                    suscipit, nobis delectus doloribus repudiandae pariatur. Voluptate
+                    sunt quam magni voluptatum a!
+                </p>
+            </article>
+            <article>
+                <h1>Blog 2</h1>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
+                    impedit in, officiis expedita porro neque magnam dolore minima
+                    suscipit, nobis delectus doloribus repudiandae pariatur. Voluptate
+                    sunt quam magni voluptatum a!
+                </p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <code> Copyrights © 2022 </code>
+    </footer>
+</body>
+
+</html>
