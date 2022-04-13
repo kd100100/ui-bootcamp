@@ -1,8 +1,14 @@
-# UI Bootcamp - Assignment
+# UI Bootcamp - Assignments
 
-# Movie Booking Application
+## Responsive CSS
 
-## HTML
+![](images/responsive-css.gif)
+
+#
+
+## Movie Booking Application
+
+### CSS
+![CSS complete image](images/movie-booking-CSS.png)
+### HTML
 ![HTML complete image](images/movie-booking-HTML.png)
-## CSS
-![HTML complete image](images/movie-booking-CSS.png)
