@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.5s;
+    margin: 0;
+    background-color: rgb(34, 40, 49);
+    color: white;
+}
+
+/* header */
+header,
+footer {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: saturate(180%) blur(10px);
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+.nav-list {
+    display: flex;
+    flex: 1;
+    padding: 0;
+}
+.nav-link,
+.language {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    background-color: transparent;
+    padding: 5px 10px;
+}
+.nav-link {
+    margin-right: 25px;
+}
+.nav-list .active,
+.nav-link:hover {
+    background: linear-gradient(to bottom right, #ff653c, #ff0052);
+    border-radius: 5px;
+}
+.language {
+    margin-left: 5px;
+}
+
+/* main */
+.movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 7vh 0;
+}
+.movie-card {
+    width: 20%;
+    text-align: center;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding-bottom: 1vh;
+}
+.movie-image {
+    margin: 0 auto;
+}
+.movie-description {
+    text-align: justify;
+    width: 100%;
+}
+.book-now-button {
+    border: none;
+    background: linear-gradient(to bottom right, #ff653c, #ff0052);
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+.movie-banner {
+    display: flex;
+    padding: 5vh 5vw;
+}
+
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.5em;
+}
