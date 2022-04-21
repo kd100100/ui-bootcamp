@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,9 @@
     <meta name="description" content="Online movie booking application">
     <title>Book Your Movie - Online movie booking platform</title>
     <link rel="stylesheet" href="assets/index.css">
+    <link rel="stylesheet" href="assets/modal.css">
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -19,6 +22,7 @@
                 <li><a href="#" class="nav-link">Bookings</a></li>
                 <li><a href="#" class="nav-link">Logout</a></li>
             </ul>
+            <div class="nav-link hamburger-icon">&#9776;</div>
             <label for="language" class="language">Language</label>
             <select name="language" id="language" class="language">
                 <option>All</option>
@@ -28,34 +32,51 @@
             </select>
         </nav>
     </header>
-    <main class="movies">
-        <section class="movie-card">
-            <img src="https://img.ticketnew.com/tn/movie/24508/7.jpg?479925&x-oss-process=image/resize,m_mfit,w_330,h_400/quality,q_80" alt="Beast movie poster" width="387" height="470" class="movie-image" />
-            <div>
-                <h1>Beast</h1>
-                <div class="movie-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi animi voluptates ab quibusdam quidem iste, ratione molestiae fugiat architecto quasi sunt aut.</div>
-                <button class="book-now-button">Book Now</button>
-            </div>
-        </section>
-        <section class="movie-card">
-            <img src="https://img.ticketnew.com/tn/movie/24524/7.jpg?3320427&x-oss-process=image/resize,m_mfit,w_330,h_400/quality,q_80" alt="K.G.F Chapter 2 movie poster" width="387" height="470" class="movie-image" />
-            <div>
-                <h1>K.G.F Chapter 2</h1>
-                <div class="movie-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi animi voluptates ab quibusdam quidem iste, ratione molestiae fugiat architecto quasi sunt aut.</div>
-                <button class="book-now-button">Book Now</button>
-            </div>
-        </section>
-        <section class="movie-card">
-            <img src="https://img.ticketnew.com/tn/movie/24115/7.jpg?6385616&x-oss-process=image/resize,m_mfit,w_330,h_400/quality,q_80" alt="RRR movie poster" width="387" height="470" class="movie-image" />
-            <div>
-                <h1>RRR</h1>
-                <div class="movie-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi animi voluptates ab quibusdam quidem iste, ratione molestiae fugiat architecto quasi sunt aut.</div>
-                <button class="book-now-button">Book Now</button>
-            </div>
-        </section>
+    <main>
+        <div class="booking-modal" id="booking-modal">
+            <section class="booking-modal-content" id="booking-modal-content">
+                <span class="close"><button onclick="closeModal()">&times;</button></span>
+                <h1>Booking Tickets</h1>
+                <form action="">
+                    <div class="form-group">
+                        <label for="movie-name">Movie Name</label>
+                        <input type="text" name="movie-name" id="movie-name" class="form-control" value="Beast"
+                            readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="movie-date">Date</label>
+                        <input type="date" name="movie-date" id="movie-date" class="form-control"
+                            placeholder="Enter Date">
+                    </div>
+                    <div class="form-group">
+                        <label for="movie-time">Time</label>
+                        <select name="movie-time" id="movie-time" class="form-control">
+                            <option>10:00 AM</option>
+                            <option>12:00 PM</option>
+                            <option>02:00 PM</option>
+                            <option>04:00 PM</option>
+                            <option>06:00 PM</option>
+                            <option>08:00 PM</option>
+                            <option>10:00 PM</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="movie-seats">Seats</label>
+                        <input type="text" name="movie-seats" id="movie-seats" class="form-control"
+                            placeholder="Enter Seats">
+                    </div>
+                </form>
+            </section>
+        </div>
+        <div id="movie-container" class="movies"></div>
     </main>
     <footer>
         <code> Copyrights © 2022-2023 </code>
     </footer>
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/modal.js"></script>
 </body>
+
 </html>
