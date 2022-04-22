@@ -5,13 +5,15 @@ import Ref from "./components/Ref";
 import RefAssignment from "./components/RefAssignment";
 import Effect from "./components/Effect";
 import SearchBox from "./components/SearchBox";
+import ContextParent from "./context/ContextParent";
+import MemoParent from "./memo/MemoParent";
 
 function App() {
     const [shouldShowEffect, setShouldShowEffect] = useState(true);
 
     return (
         <>
-            <State />
+            {/* <State />
             <Ref />
             <RefAssignment />
             {shouldShowEffect && <Effect />}
@@ -24,6 +26,10 @@ function App() {
             </button>
             <hr />
             <SearchBox />
+            <hr />
+            <br /> 
+            <ContextParent />   */}
+            <MemoParent />
         </>
     );
 }
